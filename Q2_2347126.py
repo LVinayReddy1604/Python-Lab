@@ -29,7 +29,7 @@ sum=0
 for i in empid:
     if i%2==0:
         sum+=i
-print("Sum of all even numbers is: ", sum)
+print("Sum of all even Ids is: ", sum)
 
 
 #D. Remove duplicate numbers in a list
@@ -37,13 +37,13 @@ noduplicateid=[]
 for i in empid:
     if i not in noduplicateid:
         noduplicateid.append(i)
-print("The list with no duplicate values is: ",noduplicateid)
+print("The list with no duplicate Ids is: ",noduplicateid)
 
 
 #2 Function for Dictionary 
-DOB={ "Virat Kohli": "5 November 1988", "Umesh Yadav": "25 October 1987", "Manish Pandey": "10 September 1989", "Rohit Sharma": "30 April 1987", "Ravindra Jadeja": "6 December 1988", "Hardik Pandya": "11 October 1993" }
+empDOB={ "Kushal": "5 November 1988", "Narendran": "25 October 1987", "Justin": "10 September 1989", "Pranav": "30 April 1987", "Thangavignesh": "6 December 1988", "Punith": "11 October 1993" }
 def birthDate(name): 
-    print(DOB.get(""+name+""))
+    print(empDOB.get(""+name+""))
 
 name=input("enter the name of the employee")
 birthDate(name)
